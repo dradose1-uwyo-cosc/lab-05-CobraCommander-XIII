@@ -1,12 +1,10 @@
-# Your Name Here
+# Reuben McGuire
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
+# 10/09/2024
+# Lab 05
+# Lab Section: 15
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# 
 
 max_temps = [
     32, 24, 22, 25, 37, 33, 34, 40, 40, 42,
@@ -94,6 +92,17 @@ min_temps = [
 # You cannot use in-built functions like max(), min() or sort the lists
 # The use of len() is fine
 # You can do this in two individual loops, or a single loop if you wish 
+
+max_temp = 0
+min_temp = 0
+
+for max_val in max_temps:
+    if max_val > max_temp:
+        max_temp = max_val
+
+for min_val in min_temps:
+    if min_val < min_temp:
+        min_temp = min_val
 
 print(f"Max temp = {max_temp}")
 print(f"Min temp = {min_temp}")
