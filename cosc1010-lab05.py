@@ -113,9 +113,26 @@ numbers = [-61, -76, 94, 21, 97, -4, 21, 56, -26, 9, 100, 56, -7, -32, 60, -68, 
 # You should print the number and the result within an f-string 
 # Example output: 83 is positive
 
+pos_list = []
+neg_list = []
+zero_list = []
+
+for num in numbers:
+    if num > 0:
+        pos_list.append(num)
+    elif num < 0:
+        neg_list.append(num)
+    elif num == 0:
+        zero_list.append(num)
+
+pos_count = len(pos_list)
+neg_count = len(neg_list)
+zero_count = len(zero_list)
+
 print(f'There are {pos_count} positive numbers')
 print(f'There are {neg_count} negative numbers')
 print(f"Zero occurred {zero_count} time(s)")
+
 # Given the same numbers list, give the sum of all positive numbers, and the sum of all negative numbers
 # This should be done within a single loop
 
